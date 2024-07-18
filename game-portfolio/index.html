@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      #app 
+    { width : 100%;
+      height :100%;
+      position: relative;
+    }
+    #text-container{
+      display : none;
+    }
+    @font-face {
+      font-family: monogram;
+      src: url('monogram.ttf');
+    }
+    body{
+      font-family: monogram , monospace;
+      font-size: 2rem;
+      overflow: hidden;
+      user-select: none;
+    }
+    #textBox{
+      position:absolute;
+      left: 10%;
+      right: 10%;
+      bottom: 2vh;
+      min-height: 10vh;
+      background: white;
+      outline-style: solid;
+      padding: 1rem;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      word-spacing: 0.2rem;
+      filter: drop-shadow(0 0 0 0.75rem rgb(112, 112, 112));
+    }
+    .uitext{
+      margin: 0;
+      user-select: none;
+    }
+    .uiCloseButton{
+      font-family: monospace , monogram;
+      border-radius: 3px;
+      border-style: none;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    .buttonContainer{
+      align-self: flex-end;
+      margin-top: 1rem;
+    }
+    .note{
+      position: absolute;
+      left: 5%;
+      top: 1vh;
+      display: flex;
+      flex-direction: column;
+      color: aliceblue;
+    }
+    </style>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="ui">
+        <p class="note">Welcome to my portolfio <br>Click/Tap around to move</p>
+        <div id="text-container">
+          <div id="textBox">
+          <p id="dialogue" class="uitext" ></p>
+          <div class="buttonContainer">
+            <button id="closeButton" class="uiCloseButton">Exit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="gameport">
+      </canvas>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
