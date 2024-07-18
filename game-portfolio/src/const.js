@@ -9,6 +9,6 @@ export const dialogueData = {
     Education: `I completed high school in 2018 with a focus on computer science. Subsequently, I earned my bachelor's degree in Network Security from the Higher Institute of Technological Studies in Communications of Tunis. I then obtained my master's degree in computer engineering from Vistula University in Warsaw Poland.`,
     projects: `You can check out my projects on github: "https://www.github.com/LouayBejaoui"`,
     library: `yomken houni skills azber`,
-    ontactMe: `You can contact me vis Linkedin: "www.linkedin.com/in/louay-bejaoui" 
+    contactMe: `You can contact me via Linkedin: "www.linkedin.com/in/louay-bejaoui"<br> 
     Or through my email: louay.bejaoui@edu.isetcom.tn.`,
   };
