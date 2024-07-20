@@ -1,5 +1,5 @@
 import { conScale, dialogueData } from './const.js';
-import {k} from './kaboomCtx.js' ;
+import {k} from './kaboom.js' ;
 import { displayDialogue, setCamScale } from './utils.js';
 
 k.loadSprite('sheet' , './spritesheet.png', {
