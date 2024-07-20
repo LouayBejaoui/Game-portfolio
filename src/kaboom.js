@@ -1,4 +1,5 @@
-import kaboom from "kaboom";
+import kaboom from 'https://unpkg.com/kaboom/dist/kaboom.mjs';
+
 
 export const k = kaboom({
 global:false , 
